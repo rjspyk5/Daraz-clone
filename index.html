@@ -9,116 +9,275 @@
       href="images/favicon_prev_ui.png"
       type="image/x-icon"
     />
+    <!-- Tailwind and DaisyUI linkup -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body style="font-family: 'Roboto', sans-serif">
     <!-- Header -->
-    <header class="px-3 md:px-20 bg-[#F85606]">
-      <!-- First nav -->
-      <nav class="max-h-80 flex items-center space-x-4">
-        <!-- Logo -->
-        <div class="logo max-w-32">
-          <img class="" src="images/logo.png" alt="" />
-        </div>
-        <!-- Search Box -->
-        <div class="search-box flex-1">
-          <input
-            placeholder="Search in Daraz"
-            class="w-full p-3 rounded-lg"
-            type="text"
-            name=""
-            id=""
-          />
-        </div>
-        <!-- Right side elements container -->
-
-        <div class="cart flex">
-          <!-- Login Button -->
-          <div class="login text-white uppercase">
-            <button class="btn btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
+    <header
+      class="px-3 md:px-20 bg-[#F85606] sticky top-0 z-10 backdrop-blur-sm"
+    >
+      <nav class="max-h-80">
+        <!-- First nav -->
+        <div class="first-half flex justify-between items-center pb-3">
+          <ul class="list-none flex space-x-6 text-xs">
+            <li>
+              <a href="" class="text-white underline-line hover:opacity-65"
+                >Become a Seller</a
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                />
-              </svg>
-              Login
-            </button>
-          </div>
-          <hr class="bg-white h-5 mt-4 w-[1px]" />
-          <!-- Sign Up button -->
-          <button type="button" class="btn text-white btn-ghost uppercase">
-            Sign Up
+            </li>
+            <li>
+              <a href="" class="text-white underline-line hover:opacity-65"
+                >Daraz Donets</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-white underline-line hover:opacity-65"
+                >Help Center</a
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="bg-[#0000004d] text-white text-[13px] p-1 rounded-b-lg me-5"
+          >
+            Save More On App
           </button>
-          <!-- Language Button -->
-          <div class="language button">
-            <button type="button" class="btn btn-ghost text-white uppercase">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-                />
-              </svg>
-              EN
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </button>
+        </div>
+        <!-- Second Half -->
+        <div class="second-half flex items-center space-x-4 pb-8">
+          <!-- Logo -->
+          <div class="logo max-w-32">
+            <img class="" src="images/logo.png" alt="" />
           </div>
-          <!-- Button Cart -->
+          <!-- Search Box -->
+          <div class="search-box flex-1">
+            <input
+              placeholder="Search in Daraz"
+              class="w-full p-3 rounded-lg"
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <!-- Right side elements container -->
 
-          <div class="cart">
-            <button type="button" class="btn btn-ghost text-white uppercase">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                />
-              </svg>
+          <!-- Menu button -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 text-white md:hidden block"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+            />
+          </svg>
+
+          <div class="cart font-bold md:block hidden md:flex">
+            <!-- Login Button -->
+            <div class="login text-white uppercase">
+              <button class="btn btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+                Login
+              </button>
+            </div>
+            <hr class="bg-white h-5 mt-4 w-[1px]" />
+            <!-- Sign Up button -->
+            <button type="button" class="btn text-white btn-ghost uppercase">
+              Sign Up
             </button>
+            <!-- Language Button -->
+            <div class="language button">
+              <button type="button" class="btn btn-ghost text-white uppercase">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                  />
+                </svg>
+                EN
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Button Cart -->
+
+            <div class="cart">
+              <button type="button" class="btn btn-ghost text-white uppercase">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
     </header>
+    <main class="px-3 md:px-20">
+      <!-- Carasoul Section -->
+
+      <section class="carasoul-container grid md:grid-cols-12 gap-5 mt-3 mb-5">
+        <!-- Carasoul content -->
+        <div class="menu col-span-3">
+          <ul class="list-none max-h-[450px] text-[13px]">
+            <li class="text-[#797575] w-full hover:text-[#F85606] p-0">
+              <a class="py-1 px-2" href="">Womens's and Girls Fashion</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606] p-0">
+              <a class="py-1 px-2" href="">Health and Beauty</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Watches,Bags,Jewellery </a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Men's and Boy's Fashion</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Mother & Baby</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Electronics Devices</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Tv & Home Appliances</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Electronic Accessories</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Groceries</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Home & Lifestyle</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Sports & Outdoors</a>
+            </li>
+            <li class="text-[#797575] w-full hover:text-[#F85606]">
+              <a class="py-1 px-2" href="">Automotive & Motorbike</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Carasoul container -->
+        <div class="carasoul col-span-9 rounded-xl overflow-hidden">
+          <div class="carousel w-full">
+            <!-- slider one -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/Slider/slider-1.jpg" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- Slider two -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/Slider/slider-2.jpg" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slider three -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="images/Slider/slider.jpg" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slider four -->
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="images/Slider/slider-4.jpg" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide5" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slider five -->
+            <div id="slide5" class="carousel-item relative w-full">
+              <img src="images/Slider/slider-5.jpg" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slider end -->
+          </div>
+        </div>
+        <!-- carasoul container end -->
+      </section>
+    </main>
   </body>
 </html>
