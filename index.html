@@ -28,6 +28,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      .product-card:hover .product-name {
+        color: rgb(2, 82, 255);
+      }
+    </style>
   </head>
 
   <body style="font-family: 'Roboto', sans-serif" class="bg-[#F5F5F5]">
@@ -228,7 +234,9 @@
           </ul>
         </div>
         <!-- Carasoul container -->
-        <div class="carasoul col-span-9 rounded-xl overflow-hidden">
+        <div
+          class="carasoul col-span-9 rounded-xl overflow-hidden animate-pulse hover:animate-none"
+        >
           <div class="carousel w-full">
             <!-- slider one -->
             <div id="slide1" class="carousel-item relative w-full">
@@ -479,27 +487,28 @@
       <!-- FlashSale Section -->
       <h3 class="text-gray-500 text-4xl mt-3">FlashSale</h3>
       <section class="shadow-lg bg-white my-5">
+        <!-- Flashsale Header -->
         <div
-          class="flex justify-center md:justify-between items-center pt-5 px-5"
+          class="flex justify-center md:justify-between items-center pt-5 px-5 mb-3"
         >
           <div class="flex justify-around items-center">
             <p class="text-[#f85606]">On Sale Now</p>
             <p class="ml-16">Ending in :</p>
 
-            <!-- Coundown format -->
+            <!-- Coundown start -->
             <span class="countdown font-mono text-2xl text-[#f8ecec] mx-2">
               <span
-                class="bg-[#f85606] px-1 rounded-sm"
+                class="bg-[#f85606] px-1 rounded-sm animate-pulse"
                 style="--value: 10"
               ></span
               >:
               <span
-                class="bg-[#f85606] px-1 rounded-sm"
+                class="bg-[#f85606] px-1 rounded-sm animate-pulse"
                 style="--value: 24"
               ></span
               >:
               <span
-                class="bg-[#f85606] px-1 rounded-sm"
+                class="bg-[#f85606] px-1 rounded-sm animate-pulse"
                 style="--value: 52"
               ></span>
             </span>
@@ -518,26 +527,396 @@
 
         <!-- Falshsale Products -->
         <div
-          class="products-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 py-4 rounded-lg px-3 gap-2"
+          class="products-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 py-4 rounded-lg px-3 gap-2 my-3"
         >
           <!-- Products one -->
-          <div class="card glass shadow-none hover:shadow-2xl shadow-black">
+          <div
+            class="card glass product-card shadow-none hover:shadow-2xl shadow-black"
+          >
             <figure>
               <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg"
                 alt="car!"
-                class="h-48"
+                class="h-48 hover:scale-[1.09] duration-300"
               />
             </figure>
-            <div class="px-3 text-center md:text-start pb-6">
-              <p class="text-sm">Products Name</p>
-              <p class="text-[#f85606] text-lg">$200</p>
-              <p class="text-xs"><del>$500</del> -50%</p>
+            <div class="px-3 text-center md:text-start pb-6 mt-1">
+              <p class="text-sm product-name uppercase">
+                TECno Spark 10 pro Samrtphone
+              </p>
+              <p class="text-[#f85606] text-lg">$1000</p>
+              <p class="text-xs"><del>2000</del> -50%</p>
             </div>
           </div>
           <!-- Products one end-->
+          <!-- Products two -->
+          <div
+            class="card glass product-card shadow-none hover:shadow-2xl shadow-black"
+          >
+            <figure>
+              <img
+                src="images/Products/Techno POP 7 Smartphone.jpg"
+                alt="car!"
+                class="h-48 hover:scale-[1.09] duration-300"
+              />
+            </figure>
+            <div class="px-3 text-center md:text-start pb-6 mt-1">
+              <p class="text-sm product-name uppercase">
+                Techno pop 7 smartphone
+              </p>
+              <p class="text-[#f85606] text-lg">$1200</p>
+              <p class="text-xs"><del>$600</del> -50%</p>
+            </div>
+          </div>
+          <!-- Products two end-->
+          <!-- Products THree -->
+          <div
+            class="card glass product-card shadow-none hover:shadow-2xl shadow-black"
+          >
+            <figure>
+              <img
+                src="images/Products/Techno Camon.jpg"
+                alt="car!"
+                class="h-48 hover:scale-[1.09] duration-300"
+              />
+            </figure>
+            <div class="px-3 text-center md:text-start pb-6 mt-1">
+              <p class="text-sm product-name uppercase">
+                Techno Canon 10 pro (8/128 gb)
+              </p>
+              <p class="text-[#f85606] text-lg">$2200</p>
+              <p class="text-xs"><del>$1100</del> -50%</p>
+            </div>
+          </div>
+          <!-- Products three end-->
+          <!-- Products four -->
+          <div
+            class="card glass product-card shadow-none hover:shadow-2xl shadow-black"
+          >
+            <figure>
+              <img
+                src="images/Products/samsung ss23 altra.jpg"
+                alt="car!"
+                class="h-48 hover:scale-[1.09] duration-300"
+              />
+            </figure>
+            <div class="px-3 text-center md:text-start pb-6 mt-1">
+              <p class="text-sm product-name uppercase">
+                Samsung S 23 ultra Pro
+              </p>
+              <p class="text-[#f85606] text-lg">$3200</p>
+              <p class="text-xs"><del>$1600</del> -50%</p>
+            </div>
+          </div>
+          <!-- Products four end-->
+          <!-- Products five -->
+          <div
+            class="card glass product-card shadow-none hover:shadow-2xl shadow-black"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme C55.jpg"
+                alt="car!"
+                class="h-48 hover:scale-[1.09] duration-300"
+              />
+            </figure>
+            <div class="px-3 text-center md:text-start pb-6 mt-1">
+              <p class="text-sm product-name uppercase">
+                Realme C55 Offical phone
+              </p>
+              <p class="text-[#f85606] text-lg">$500</p>
+              <p class="text-xs"><del>$250</del> -50%</p>
+            </div>
+          </div>
+          <!-- Products five end-->
+          <!-- Products six -->
+          <div
+            class="card glass product-card shadow-none hover:shadow-2xl shadow-black"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-48 hover:scale-[1.09] duration-300"
+              />
+            </figure>
+            <div class="px-3 text-center md:text-start pb-6 mt-1">
+              <p class="text-sm product-name uppercase">
+                REalme c55 unoffical verison
+              </p>
+              <p class="text-[#f85606] text-lg">$1300</p>
+              <p class="text-xs"><del>$750</del> -50%</p>
+            </div>
+          </div>
+          <!-- Products six end-->
         </div>
       </section>
+
+      <!-- Catagories SEction -->
+      <h3 class="text-gray-500 text-4xl mt-3">Catagories</h3>
+      <section>
+        <div
+          class="products-container grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 rounded-lg my-3 bg-white"
+        >
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+          <!-- Catagorie 1 -->
+          <div
+            class="product-card shadow-none hover:shadow-xl border-[1px] border-gray-300 items-center justify-center flex flex-col p-4"
+          >
+            <figure>
+              <img
+                src="images/Products/Realme c55 Unoffical.jpg"
+                alt="car!"
+                class="h-20 w-20"
+              />
+            </figure>
+            <div class="px-3 text-center pb-6 mt-1">
+              <p class="text-sm product-name">Mobile</p>
+            </div>
+          </div>
+          <!-- Catagorie 1 end -->
+        </div>
+      </section>
+      <!-- Catagories End -->
     </main>
   </body>
 </html>
