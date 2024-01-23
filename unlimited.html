@@ -1,0 +1,3288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping in Bangladesh</title>
+    <link rel="shortcut icon" href="images/favicon_prev_ui.png" type="image/x-icon" />
+
+    <!-- Bootstrap Link added -->
+
+    <!-- Tailwind and DaisyUI linkup -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+    <style>
+        .product-card:hover .product-name {
+            color: rgb(2, 82, 255);
+        }
+
+        .dropdown:hover .hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif" class="bg-[#F5F5F5]">
+    <!-- Header -->
+    <header class="px-3 md:px-16 bg-[#F85606] sticky top-0 z-10 backdrop-blur-sm">
+        <nav class="max-h-80">
+            <!-- First nav -->
+            <div class="first-half flex justify-between items-center pb-3">
+                <ul class="list-none flex space-x-6 text-xs">
+                    <li>
+                        <a href="" class="text-white underline-line hover:opacity-65">Become a Seller</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white underline-line hover:opacity-65">Daraz Donets</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white underline-line hover:opacity-65">Help Center</a>
+                    </li>
+                </ul>
+                <button type="button" class="bg-[#0000004d] text-white text-[13px] p-1 rounded-b-lg me-5">
+                    Save More On App
+                </button>
+            </div>
+            <!-- Second Half -->
+            <div class="second-half flex items-center space-x-4 pb-8">
+                <!-- Logo -->
+                <div class="logo max-w-32">
+                    <button>
+                        <a href="index.html"> <img class="" src="images/logo.png" alt="" /></a></button>
+
+                </div>
+                <!-- Search Box -->
+                <div class="search-box flex-1">
+                    <input placeholder="Search in Daraz" class="w-full p-3 rounded-lg" type="text" name="" id="" />
+                </div>
+                <!-- Right side elements container -->
+
+                <!-- Menu button -->
+                <div class="md:hidden block relative dropdown">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white md:hidden block">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                    <div
+                        class="menu col-span-3 hover hidden bg-white shadow-sm shadow-gray-400 rounded-lg absolute right-[5px] bottom-[-410px]">
+                        <ul class="list-none max-h-[450px] text-[13px]">
+                            <li class="text-[#797575] w-full hover:text-[#F85606] p-0">
+                                <a class="py-1 px-2" href="products.html">Womens's and Girls Fashion</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606] p-0">
+                                <a class="py-1 px-2" href="products.html">Health and Beauty</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Watches,Bags,Jewellery </a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Men's and Boy's Fashion</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Mother & Baby</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Electronics Devices</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Tv & Home Appliances</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Electronic Accessories</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Groceries</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Home & Lifestyle</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Sports & Outdoors</a>
+                            </li>
+                            <li class="text-[#797575] w-full hover:text-[#F85606]">
+                                <a class="py-1 px-2" href="products.html">Automotive & Motorbike</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="cart font-bold md:block hidden md:flex">
+                    <!-- Login Button -->
+                    <div class="login text-white uppercase">
+                        <button class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                            Login
+                        </button>
+                    </div>
+                    <hr class="bg-white h-5 mt-4 w-[1px]" />
+                    <!-- Sign Up button -->
+                    <button type="button" class="btn text-white btn-ghost uppercase">
+                        Sign Up
+                    </button>
+                    <!-- Language Button -->
+                    <div class="language button">
+                        <button type="button" class="btn btn-ghost text-white uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                            EN
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Button Cart -->
+
+                    <div class="cart">
+                        <button type="button" class="btn btn-ghost text-white uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- All Products Section -->
+    <section>
+        <h5 class="text-4xl text-center my-4">
+            All Products
+        </h5>
+
+        <div
+            class="products-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 mt-2s pb-4 rounded-lg px-3 gap-2  mb-3">
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Bike/bike1.png" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/r63.png" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/S-147.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/326.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/236 ১৫০০.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/101.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/102.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 B.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/104.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/236 ১৫০০.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/101.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/102.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 B.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/104.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Bike/bike1.png" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/r63.png" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/S-147.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/326.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/236 ১৫০০.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/101.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/102.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 B.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/104.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/236 ১৫০০.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/101.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/102.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 B.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/104.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Bike/bike1.png" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/r63.png" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/S-147.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/326.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/236 ১৫০০.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/101.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/102.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 B.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/104.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/236 ১৫০০.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/100.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/101.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/102.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 A.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 B.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 D.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/103 C.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Shari/104.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-01    999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Watch/CW-02      999.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Realme 11 pro.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Galaxy A34.jpg" alt="car!" class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Beard oil/15.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/102.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/104.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Camon.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13164400_494818684040737_6287044286015278015_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmanch.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Indian dress/236 ১৫০০.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Men Blazer/richmancd.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Techno Spark 10 Pro  SmartPhone.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/13100887_494818520707420_1534651700963238927_n.jpg" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+            <!-- Products one -->
+            <div class="card glass bg-white product-card shadow-none hover:shadow-2xl shadow-black">
+                <figure>
+                    <img src="images/Products/Jewlary/r63.png" alt="car!"
+                        class="h-48 hover:scale-[1.09] duration-300" />
+                </figure>
+                <div class="px-3 text-center md:text-start pb-6 mt-1">
+                    <p class="text-sm product-name uppercase">
+                        TECno Spark 10 pro Samrtphone
+                    </p>
+                    <p class="text-[#f85606] text-lg">$1000</p>
+                    <p class="text-xs"><del>2000</del> -50%</p>
+                </div>
+            </div>
+            <!-- Products one end-->
+
+
+        </div>
+        <div class="text-center"><a href=""> <button class="btn btn-outline btn-error w-[30%] mx-auto">Load
+                    More</button></a></div>
+
+
+    </section>
+
+    </section>
+    </main>
+
+    <footer>
+        <footer class="footer grid-rows-2 p-10  ">
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Social</header>
+                <a class="link link-hover">Twitter</a>
+                <a class="link link-hover">Instagram</a>
+                <a class="link link-hover">Facebook</a>
+                <a class="link link-hover">Github</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Explore</header>
+                <a class="link link-hover">Features</a>
+                <a class="link link-hover">Enterprise</a>
+                <a class="link link-hover">Security</a>
+                <a class="link link-hover">Pricing</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Apps</header>
+                <a class="link link-hover">Mac</a>
+                <a class="link link-hover">Windows</a>
+                <a class="link link-hover">iPhone</a>
+                <a class="link link-hover">Android</a>
+            </nav>
+        </footer>
+    </footer>
+</body>
+
+</html>
